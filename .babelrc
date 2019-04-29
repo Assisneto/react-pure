@@ -1,0 +1,4 @@
+{
+  /*transforma feature (js e react) que o navegador não suporta em feature que o navegador suporta */
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
