@@ -10,6 +10,9 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
+  "scripts": {
+    "dev": "webpack --mode development"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
