@@ -2,6 +2,13 @@ import React, { Component, Fragment } from "react";
 import propTypes from "prop-types";
 import { render } from "react-dom";
 class Button extends Component {
+  static defaultProps = {
+    children: "Save"
+  };
+  static propTypes = {
+    onClick: propTypes.func.isRequired,
+    children: propTypes.string
+  };
   render() {
     return (
       <a href="" onClick={this.props.onClick}>
@@ -10,13 +17,7 @@ class Button extends Component {
     );
   }
 }
-Button.defaultProps = {
-  children: "Save"
-};
-Button.propTypes = {
-  onClick: propTypes.func.isRequired,
-  children: propTypes.string
-};
+
 class App extends Component {
   handleClick() {
     alert("Button");
