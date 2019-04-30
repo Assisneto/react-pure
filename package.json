@@ -7,6 +7,7 @@
   "author": "Assisneto <netodamasceno12@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
