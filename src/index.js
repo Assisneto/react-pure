@@ -10,24 +10,22 @@ class Button extends Component {
     children: propTypes.string
   };
   render() {
-    return (
-      <a href="" onClick={this.props.onClick}>
-        {this.props.children}
-      </a>
-    );
+    return <button onClick={this.props.onClick}>{this.props.children}</button>;
   }
 }
 
 class App extends Component {
-  handleClick() {
-    alert("Button");
-  }
+  state = {
+    count: 0
+  };
+  handleClick = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
   render() {
     return (
       <Fragment>
         <h1>Hello World</h1>
-        <Button onClick={() => alert("save")} />
-        <Button onClick={this.handleClick}>Click</Button>
+        <Button onClick={this.handleClick}>{this.state.count}</Button>
       </Fragment>
     );
   }
